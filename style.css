@@ -1,0 +1,524 @@
+@import url( 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+:root{
+--themecolor: #fcba03;
+--themecolortrans: #fcba037e;
+
+--trans: #ffffff00;
+
+--textcolor: #f1f0eb;
+--textinputecol: #ced0d3;
+
+--background: #1a1a1a;
+--outline: #333333;
+
+--white: #f1f0eb;
+--black: #060808;
+
+--red: #ac0d0d;
+--green: #01b637;
+--blue: #0055ff;
+
+--font: 'Montserrat';
+
+--shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+body {
+    background-color: var(--background);
+    accent-color: var(--themecolor);
+
+    background: url(https://i.ibb.co/SRwkkzf/Ink-Neon-SCP.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1-header{
+    color : var(--textcolor);
+    font-family: "Montserrat";
+    font-size: x-large;
+    text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color : var(--textcolor);
+    font-family: var(--font);
+    font-weight:  350;
+    text-align: center;
+}
+
+p {
+    color: var(--textcolor);
+    font-family: var(--font);
+    text-align: center;
+}
+
+hr{
+    border: 1px solid var(--themecolor);
+    margin: 10px;
+}
+
+label {
+    color: var(--textcolor);
+    font-family: var(--font);
+    font-size: medium;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+input {
+    background-color: var(--background);
+    border: 2px solid var(--outline);
+    border-radius: 15px;
+    color: var(--textcolor);
+
+    font-family: var(--font);
+    font-size: medium;
+
+    padding: 10px;
+    margin: 10px;
+
+    box-shadow: var(--themecolor) 0px 3px 4px 0px inset;
+
+    transition: 0.5s;
+}
+
+input:focus {
+    outline: none;
+    background-color: var(--background);
+    border: 2px solid var(--themecolortrans);
+    border-radius: 15px;
+    color: var(--textcolor);
+
+    font-family: var(--font);
+    font-size: medium;
+
+    padding: 10px;
+    margin: 10px;
+
+    border-bottom: 3px solid var(--themecolor);
+    transition: 0.5s;
+}
+
+button {
+    background-color: var(--background);
+
+
+    border: 2px solid var(--outline);
+    border-radius: 15px;
+    color: var(--textcolor);
+    
+    font-family: var(--font);
+    font-size: medium;
+
+    padding: 10px;
+
+    margin: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+
+    box-shadow: var(--themecolor) 0px 3px 4px 0px inset;
+
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: var(--background);
+
+    border: 2px solid var(--themecolor);
+    border-radius: 15px;
+    color: var(--textcolor);
+    
+    font-family: var(--font);
+    font-size: medium;
+
+    padding: 15px;
+
+    margin: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+
+    box-shadow: var(--themecolor) 0px 3px 4px 0px inset;
+
+    transition: 0.5s;
+}
+
+button > a {
+    color: var(--textcolor);
+    text-decoration: none;
+    font-family: 'Montserrat', Times, serif;
+    font-size: medium;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+a{
+    color: var(--themecolor);
+    text-decoration: none;
+    font-family: 'Montserrat', Times, serif;
+    font-size: medium;
+    text-align: center;
+}
+
+header{
+    color: var(--textcolor);
+    font-family: var(--font);
+    font-size: 1.5rem;
+    text-align: center;
+
+    background-color: var(--outline);
+    border-radius: 5px;
+    border-bottom: 2px solid var(--themecolor);
+
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
+}
+
+
+/* ---------------------------------------------- */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 5px;
+
+}
+
+
+.holder {
+    background-color: var(--background);
+    
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+
+    flex-direction: column;
+    justify-content: center;
+
+    border: 2px solid var(--outline);
+    box-shadow: rgba(0, 0, 0, 0.486) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+    transition: 0.5s;
+
+
+    /* background: url(https://i.ibb.co/SRwkkzf/Ink-Neon-SCP.jpg) */
+
+}
+
+img {
+/* Change the Size to fit the Holder */
+
+object-fit: cover;
+
+}
+
+        
+
+
+.card{
+
+    background-color: var(--background);
+    border-radius: 15px;
+    padding: 5px;
+    margin: 10px;
+
+    border: 2px solid var(--outline);
+    box-shadow: rgba(0, 0, 0, 0.486) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+    transition: 0.5s;	
+
+}
+
+.card > h1 {
+    font-size: 1.5rem;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: var(--background);
+    color: var(--textcolor);
+    text-align: center;
+    border: 2px solid var(--themecolor);
+    box-shadow: var(--themecolor) 0px 3px 4px 0px inset;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.card > h2 {
+    font-size: 0.9rem;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--background);
+    color: var(--textcolor);
+    text-align: center;
+    border: 1px solid var(--themecolor);
+    box-shadow: var(--themecolor) 0px 3px 4px 0px inset;
+
+}
+
+.card > .footer {
+    font-size: 0.9rem;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: var(--background);
+    color: var(--textcolor);
+    text-align: center;
+    border: 1px solid var(--themecolor);
+    box-shadow: var(--themecolor) 0px 3px 4px 0px inset;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card > .footer > a {
+    color: var(--textcolor);
+    text-decoration: none;
+    font-family: 'Montserrat', Times, serif;
+    font-size: medium;
+    text-align: center;
+
+    padding: 10px;
+    margin-left: 10px;
+
+    border: 2px solid var(--outline);
+    border-radius: 15px;
+
+    box-shadow: var(--themecolor) 0px 3px 0px 0px inset;
+}
+
+/* .card-footer {
+    font-family: "Montserrat", Times, serif;
+    font-size: 0.9rem;
+    color: var(--textcolor);
+    text-align: center;
+
+    border-radius: 5px;
+
+    background-color: var(--background);
+    padding: 20px;
+    margin: 10px;
+
+} */
+
+
+/* ---------------------------------------------- */
+
+tag-red {
+    background-color: var(--background);
+    color: var(--textcolor);
+    border-radius: 15px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    font-family : "Montserrat";
+    font-size: 1.2rem;
+
+    border: 2px solid var(--red);
+    box-shadow: var(--red) 0px 3px 4px 0px inset;
+}
+
+tag-green {
+    background-color: var(--background);
+    color: var(--textcolor);
+    border-radius: 15px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    font-family : "Montserrat";
+    font-size: 1.2rem;
+    
+    border: 2px solid var(--green);
+    box-shadow: var(--green) 0px 3px 4px 0px inset;
+}
+
+tag-blue {
+    background-color: var(--background);	
+    color: var(--textcolor);
+    border-radius: 15px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    font-family : 'Montserrat', Times, serif;
+    font-size: 1.2rem;
+
+    border: 2px solid var(--blue);
+    box-shadow: var(--blue) 0px 3px 4px 0px inset;
+}
+
+tag-yellow {
+    background-color: var(--background);
+    color: var(--textcolor);
+    border-radius: 15px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    font-family : 'Montserrat', Times, serif;
+    font-size: 1.2rem;
+
+    border: 2px solid var(--themecolor);
+    box-shadow: var(--themecolor) 0px 3px 4px 0px inset;
+}
+
+.outline-red {
+    border: 2px solid var(--red);
+    color: var(--white);
+}
+
+.outline-green {
+    border: 2px solid var(--green);
+    color: var(--white);
+}
+
+.outline-blue {
+    border: 2px solid var(--blue);
+    color: var(--white);
+}
+
+.outline-theme {
+    border: 2px solid var(--themecolor);
+    color: var(--white);
+}
+
+/* ---------------------------------------------- */
+footer {
+
+    font-family: "Montserrat", Times, serif;
+    font-size: 0.9rem;
+    color: var(--textcolor);
+    text-align: center;
+
+    border-radius: 5px;
+
+    background-color: var(--background);
+    padding: 20px;
+    margin: 10px;
+
+    border: 2px solid var(--outline);
+    box-shadow: rgba(0, 0, 0, 0.486) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-bottom: 2px solid var(--themecolor);
+}
+
+footer > a {
+    color: var(--textcolor);
+    text-decoration: none;
+    font-family: 'Montserrat', Times, serif;
+    font-size: medium;
+    text-align: center;
+
+    padding: 10px;
+    margin-left: 10px;
+
+    border: 2px solid var(--outline);
+    border-radius: 15px;
+
+    box-shadow: var(--themecolor) 0px 3px 0px 0px inset;
+}
+
+footer > a:hover {
+    color: var(--textcolor);
+    text-decoration: none;
+    font-family: 'Montserrat', Times, serif;
+    font-size: medium;
+    text-align: center;
+
+    padding: 10px;
+    margin-left: 10px;
+
+    border: 2px solid var(--themecolor);
+    border-radius: 15px;
+
+    box-shadow: var(--themecolor) 0px 3px 4px 0px inset;
+    transition: 0.5s;
+}
+
+/* ---------------------------------------------- */
+
+.nav{
+    background-color: var(--background);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+
+    border: 2px solid var(--outline);
+    box-shadow: rgba(0, 0, 0, 0.486) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-top: 2px solid var(--themecolor);
+}
+
+.nav > h1 {
+    float: left;
+    font-family: 'Montserrat', Times, serif;
+    font-size: 1.5rem;
+    color: var(--textcolor);
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav > a{
+    color: var(--textcolor);
+    text-decoration: none;
+    font-family: 'Montserrat', Times, serif;
+    font-size: medium;
+    text-align: center;
+
+    padding: 10px;
+    margin-left: 10px;
+
+    border: 2px solid var(--outline);
+    border-radius: 15px;
+
+    box-shadow: var(--themecolor) 0px 3px 0px 0px inset;
+}
+
+.nav > a:hover{
+    color: var(--textcolor);
+    text-decoration: none;
+    font-family: 'Montserrat', Times, serif;
+    font-size: medium;
+    text-align: center;
+
+    padding: 10px;
+    margin-left: 10px;
+
+    border: 2px solid var(--themecolor);
+    border-radius: 15px;
+
+    box-shadow: var(--themecolor) 0px 3px 4px 0px inset;
+    transition: 0.5s;
+}
+
+/* ---------------------------------------------- */
+
+@media screen and (max-width: 450px) {
+    .holder {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+/* ---------------------------------------------- */
+/* CUSTOM CSS UNDER THIS LINE */
+/* ---------------------------------------------- */
+
+
+
+
+
+
+
+
+/* ---------------------------------------------- */
